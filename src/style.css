@@ -1,7 +1,13 @@
+@font-face{
+    font-family: 'frick';
+    src: url('../fonts/Frick0.3-Regular.otf');
+}
+
 body {
     /* background-color: black; */
     margin: 0;
     height: 100vh;
+    font-family: 'frick';
 }
 #container {
 height: 100%;
@@ -12,4 +18,7 @@ grid-template-rows: 10% 5% 2fr 5% 1fr;
 
 button:hover{
     scale: 1.1;
+}
+.fecha{
+    /* font-family: 'frick'; */
 }

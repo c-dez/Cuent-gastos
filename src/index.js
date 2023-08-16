@@ -1,6 +1,11 @@
 import {  boton } from "./button.js";
+import{ date } from './date.js'
 
+//fecha container
+const fechaContainer = document.querySelector('.fecha')
+fechaContainer.appendChild(date())
 
+//botones container
 const botonesContainer = document.querySelector('.botones')
 const btn10 = boton('$10', '10')
 const btn50 = boton('$50','50')
