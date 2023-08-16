@@ -1,17 +1,24 @@
 export {boton}
+
+import { totalText } from './index.js'
 import { array, sum } from "./array.js";
+// import { total} from './total.js'
 
 
 function BtnObj(name,value){
     this.name = name;
     this.value = value;
-    this.fun = function()
+    this.array = function()
     {
         array.push(this.value)
     }
-    this.test = function(){
-        sum()
-    }
+    // this.sum = function()
+    // {
+    //     sum()
+    // }
+    // this.total = function(){
+    //     total()
+    // }
     
 }
 
@@ -32,9 +39,15 @@ const boton = (name, value)=>
     element.style.color = 'black'
     element.style.fontSize = '18px'
 
-    element.addEventListener('click', ()=>{
-        obj.fun()
-        obj.test()
+    element.addEventListener('click', ()=>
+    {
+        obj.array()
+        // obj.sum()
+        // obj.total()
+        totalText.textContent = sum()
+
+
+
         // console.log(array)
     })
     return element;
