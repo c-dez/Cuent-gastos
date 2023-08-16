@@ -1,4 +1,5 @@
 export {boton}
+import { array, sum } from "./array.js";
 
 
 function BtnObj(name,value){
@@ -6,8 +7,12 @@ function BtnObj(name,value){
     this.value = value;
     this.fun = function()
     {
-        console.log(`${this.name} ${this.value}`)
+        array.push(this.value)
     }
+    this.test = function(){
+        sum()
+    }
+    
 }
 
 
@@ -28,15 +33,15 @@ const boton = (name, value)=>
     element.style.fontSize = '18px'
 
     element.addEventListener('click', ()=>{
-        getObj(obj.value)
+        obj.fun()
+        obj.test()
+        // console.log(array)
     })
     return element;
 
 }
 
-const getObj = (value)=>{
-    console.log(value)
-}
+
 
 
 
