@@ -1,3 +1,6 @@
+export { date }
+
+
 const todayIs = ()=>{
      const fecha = new Date()
      const today = fecha.getDate()
@@ -56,4 +59,3 @@ const date = ()=>{
     return element
 }
 
- export { date }

@@ -1,4 +1,7 @@
- function BtnObj(name,value){
+export {boton}
+
+
+function BtnObj(name,value){
     this.name = name;
     this.value = value;
     this.fun = function()
@@ -24,11 +27,16 @@ const boton = (name, value)=>
     element.style.color = 'black'
     element.style.fontSize = '18px'
 
+    element.addEventListener('click', ()=>{
+        getObj(obj.value)
+    })
     return element;
 
 }
 
+const getObj = (value)=>{
+    console.log(value)
+}
 
 
-export {boton}
 

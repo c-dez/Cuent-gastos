@@ -20,5 +20,7 @@ button:hover{
     scale: 1.1;
 }
 .fecha{
-    /* font-family: 'frick'; */
+
+    display: flex;
+    justify-content: center;
 }
