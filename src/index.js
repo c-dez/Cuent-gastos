@@ -2,7 +2,7 @@ export {totalText}
 
 import {  boton } from "./button.js";
 import{ date } from './date.js'
-// import { total } from "./total.js";
+import { createDatos } from "./datos.js";
 
 //fecha container
 const fechaContainer = document.querySelector('.fecha')
@@ -22,9 +22,13 @@ botonesContainer.appendChild(btn500)
 
 //total container
 const totalContainer = document.querySelector('.total')
-totalContainer.textContent = 'so far'
 const totalText =  document.createElement('div')
 totalContainer.appendChild(totalText)
+
+//datos container
+const datosContainer = document.querySelector('.datos')
+datosContainer.appendChild(createDatos())
+
 
 
 

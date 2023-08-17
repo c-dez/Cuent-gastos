@@ -1,8 +1,7 @@
 export {boton}
 
 import { totalText } from './index.js'
-import { array, sum,sumObj, gastos, fechaActual } from "./array.js";
-// import { total} from './total.js'
+import { array,sumObj, gastos, fechaActual } from "./array.js";
 
 
 function BtnObj(name,value){
@@ -12,14 +11,6 @@ function BtnObj(name,value){
     {
         array.push(this.value)
     }
-    // this.sum = function()
-    // {
-    //     sum()
-    // }
-    // this.total = function(){
-    //     total()
-    // }
-    
 }
 
 

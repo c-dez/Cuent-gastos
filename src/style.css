@@ -4,7 +4,6 @@
 }
 
 body {
-    /* background-color: black; */
     margin: 0;
     height: 100vh;
     font-family: 'frick';
@@ -23,4 +22,10 @@ button:hover{
 
     display: flex;
     justify-content: center;
+}
+.datos{
+    /* background-color: red; */
+}
+.total{
+    /* background-color: rebeccapurple; */
 }
