@@ -1,7 +1,7 @@
 export {boton}
 
 import { totalText } from './index.js'
-import { array, sum } from "./array.js";
+import { array, sum,sumObj, gastos, fechaActual } from "./array.js";
 // import { total} from './total.js'
 
 
@@ -41,12 +41,16 @@ const boton = (name, value)=>
 
     element.addEventListener('click', ()=>
     {
-        obj.array()
+        // obj.array()
+        
         // obj.sum()
         // obj.total()
-        totalText.textContent = sum()
+        ////////
+        gastos[fechaActual].push(obj.value)
+        console.table(gastos)
+        totalText.textContent = sumObj()
 
-
+        //////
 
         // console.log(array)
     })
