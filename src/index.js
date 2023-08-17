@@ -1,8 +1,9 @@
-export {totalText}
+export {totalText, botonesContainer}
 
 import {  boton } from "./button.js";
 import{ date } from './date.js'
 import { createDatos } from "./datos.js";
+import { styleButtons } from "./style/bononesContainer.js";
 
 //fecha container
 const fechaContainer = document.querySelector('.fecha')
@@ -19,6 +20,7 @@ botonesContainer.appendChild(btn10)
 botonesContainer.appendChild(btn50)
 botonesContainer.appendChild(btn100)
 botonesContainer.appendChild(btn500)
+styleButtons()
 
 //total container
 const totalContainer = document.querySelector('.total')
